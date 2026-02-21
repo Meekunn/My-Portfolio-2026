@@ -8,7 +8,7 @@ import { BsTwitterX } from "react-icons/bs";
 
 export function Contact() {
   const contactPageRef = useRef(null);
-  const isInView = useInView(contactPageRef, { once: true, amount: 0.2 });
+  const isInView = useInView(contactPageRef, { once: true, amount: 0.1 });
   
 
   return (
@@ -43,7 +43,7 @@ export function Contact() {
           <motion.p
             initial={{ opacity: 0, y: 10 }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
-            transition={{ duration: 0.5, delay: 0.7 }}
+            transition={{ duration: 0.5, delay: 0.5 }}
             className="text-base md:text-lg text-gray-400 max-w-2xl mx-auto mb-2"
           >
             Have a project in mind or want to collaborate? Feel free to reach out!
@@ -52,7 +52,7 @@ export function Contact() {
             className="w-24 h-1 bg-gradient-to-r from-purple-500 to-purple-700 mx-auto rounded-full shadow-lg shadow-purple-500/50"
             initial={{ opacity: 0, scale: 0 }}
             animate={isInView ? { opacity: 1, scale: 1 } : {}}
-            transition={{ duration: 0.6, delay: 1.1, ease: "easeOut" }}
+            transition={{ duration: 0.6, delay: 0.8, ease: "easeOut" }}
           />
         </div>
 
@@ -60,7 +60,7 @@ export function Contact() {
           <motion.div
             initial={{ opacity: 0, x: -80 }}
             animate={isInView ? { opacity: 1, x: 0 } : {}}
-            transition={{ duration: 0.6, delay: 1.3, ease: "easeIn" }}
+            transition={{ duration: 0.6, delay: 1.1, ease: "easeIn" }}
             className="lg:col-span-3"
           >
             <DotLottieReact
@@ -76,17 +76,17 @@ export function Contact() {
           >
             <div className="flex flex-col gap-4">
               <motion.h3
-                initial={{ opacity: 0, x: 50 }}
+                initial={{ opacity: 0, x: 80 }}
                 animate={isInView ? { opacity: 1, x: 0 } : {}}
-                transition={{ duration: 0.6, delay: 1.3 }}
+                transition={{ duration: 0.6, delay: 1.1 }}
                 className="text-2xl md:text-3xl font-bold text-white"
               >
                 Let's Connect
               </motion.h3>
               <motion.p
-                initial={{ opacity: 0, x: 50 }}
+                initial={{ opacity: 0, x: 80 }}
                 animate={isInView ? { opacity: 1, x: 0 } : {}}
-                transition={{ duration: 0.6, delay: 1.5 }}
+                transition={{ duration: 0.6, delay: 1.3 }}
                 className="text-gray-400 leading-relaxed text-sm md:text-base"
               >
                 I'm always interested in hearing about new opportunities, 
@@ -97,9 +97,9 @@ export function Contact() {
             {/* Contact Details */}
             <div className="space-y-4">
               <motion.div
-                initial={{ opacity: 0, x: 50 }}
+                initial={{ opacity: 0, x: 80 }}
                 animate={isInView ? { opacity: 1, x: 0 } : {}}
-                transition={{ duration: 0.6, delay: 1.8 }}
+                transition={{ duration: 0.6, delay: 1.6 }}
                 className="flex items-start gap-4 p-4 bg-gray-800/50 rounded-xl shadow-md hover:shadow-lg hover:bg-gray-800 transition-all border border-purple-500/20"
               >
                 <div className="w-10 h-10 md:w-12 md:h-12 bg-gradient-to-br from-purple-500 to-purple-700 rounded-lg flex items-center justify-center flex-shrink-0 shadow-lg">
@@ -114,9 +114,9 @@ export function Contact() {
               </motion.div>
 
               <motion.div
-                initial={{ opacity: 0, x: 50 }}
+                initial={{ opacity: 0, x: 80 }}
                 animate={isInView ? { opacity: 1, x: 0 } : {}}
-                transition={{ duration: 0.6, delay: 2.1 }}
+                transition={{ duration: 0.6, delay: 1.9 }}
                 className="flex items-start gap-4 p-4 bg-gray-800/50 rounded-xl shadow-md hover:shadow-lg hover:bg-gray-800 transition-all border border-purple-500/20"
               >
                 <div className="w-10 h-10 md:w-12 md:h-12 bg-gradient-to-br from-purple-500 to-purple-700 rounded-lg flex items-center justify-center flex-shrink-0 shadow-lg">
@@ -134,14 +134,14 @@ export function Contact() {
               <motion.h4 
                 initial={{ opacity: 0, y: 50 }}
                 animate={isInView ? { opacity: 1, y: 0 } : {}}
-                transition={{ duration: 0.6, delay: 2.5 }}
+                transition={{ duration: 0.6, delay: 2.2 }}
                 className="font-semibold text-white text-2xl md:text-3xl"
               >
                 Follow Me
               </motion.h4>
               <div className="flex gap-4">
                 <motion.a
-                  href="https://github.com/meekunn"
+                  href="https://github.com/meekunn/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="p-4 rounded-full backdrop-blur-lg border border-white/20 bg-transparent shadow-lg hover:shadow-[0_25px_50px_-12px_rgba(173,70,255,0.7)] active:scale-95 active:rotate-0 transition-all duration-300 ease-out cursor-pointer hover:border-purple-500/30 hover:bg-gradient-to-tr hover:from-purple-500/10 hover:to-black/40 group relative overflow-hidden flex items-center justify-center"
@@ -150,7 +150,7 @@ export function Contact() {
                   whileHover={{scale: 1.1, rotate: '3deg'}}
                   whileTap={{ scale: 0.95 }}
                   transition={{ 
-                    duration: 0.6, delay: 2.8,
+                    duration: 0.6, delay: 2.4,
                     scale: { duration: 0.3, ease: 'easeInOut', delay: 0 }
                   }}
                 >
@@ -171,7 +171,7 @@ export function Contact() {
                   whileHover={{scale: 1.1, rotate: '3deg'}}
                   whileTap={{ scale: 0.95 }}
                   transition={{ 
-                    duration: 0.6, delay: 3.0,
+                    duration: 0.6, delay: 2.6,
                     scale: { duration: 0.3, ease: 'easeInOut', delay: 0 }
                   }}
                 >
@@ -183,7 +183,7 @@ export function Contact() {
                   </div>
                 </motion.a>
                 <motion.a
-                  href="https://twitter.com"
+                  href="https://twitter.com/mee_kunn/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="p-4 rounded-full backdrop-blur-lg border border-white/20 bg-transparent shadow-lg hover:shadow-[0_25px_50px_-12px_rgba(255,255,255,0.5)] active:scale-95 active:rotate-0 transition-all duration-300 ease-out cursor-pointer hover:border-white/30 hover:bg-gradient-to-tr hover:from-white/10 hover:to-black/40 group relative overflow-hidden flex items-center justify-center"
@@ -192,7 +192,7 @@ export function Contact() {
                   whileHover={{scale: 1.1, rotate: '3deg'}}
                   whileTap={{ scale: 0.95 }}
                   transition={{ 
-                    duration: 0.6, delay: 3.2,
+                    duration: 0.6, delay: 2.8,
                     scale: { duration: 0.3, ease: 'easeInOut', delay: 0 }
                   }}
                 >

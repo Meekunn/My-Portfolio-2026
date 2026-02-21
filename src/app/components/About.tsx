@@ -1,7 +1,7 @@
 import { motion } from 'motion/react';
 import { useInView } from 'motion/react';
 import { useRef } from 'react';
-import { FaMapMarkerAlt } from "react-icons/fa";
+import { BsGlobe2 } from "react-icons/bs";
 import { LuBrain } from "react-icons/lu";
 import { InfiniteMovingCards } from '@/components/ui/infinite-moving-cards';
 import { useIsLargeScreen } from '@/hooks/use-is-large-screen';
@@ -15,7 +15,7 @@ const skills = {
 
 export function About() {
   const aboutPageRef = useRef(null);
-  const isInView = useInView(aboutPageRef, { once: true, amount: 0.2 });
+  const isInView = useInView(aboutPageRef, { once: true, amount: 0.1 });
   const isLargeScreen = useIsLargeScreen()
 
   // Animation variants for text
@@ -26,7 +26,7 @@ export function About() {
       y: 0,
       transition: {
         duration: 0.6,
-        delay: custom * 1.0,
+        delay: custom * 0.8,
       }
     })
   };
@@ -89,10 +89,16 @@ export function About() {
                 variants={textVariants}
                 className="text-sm md:text-base"
               >
-                I'm a frontend developer with a deep passion for creating beautiful, 
-                performant web applications that users love. With over 5 years of experience, 
-                I specialize in modern JavaScript frameworks and have a keen eye for design 
-                and user experience.
+                I'm a frontend developer with real experience building cloud-based tools and scalable web applications using React and TypeScript. My background is in Information and Communication Engineering — I graduated First Class with a thesis on real-time facial recognition — and that foundation shapes how I think about the things I build. I care about clean code, intuitive interfaces, and products that actually work well for the people using them.
+              </motion.p>
+              <motion.p
+                custom={1.5}
+                initial="hidden"
+                animate={isInView ? "visible" : "hidden"}
+                variants={textVariants}
+                className="text-sm md:text-base"
+              >
+                These days, I'm deepening my path into AI and Computer Vision — particularly transfer learning, model generalization, biometric recognition systems, and getting deep learning models out into the real world. I'm also drawn to XR/AR/VR/MR and the possibilities that open up when immersive tech meets intelligent systems. It's a gradual process, and I'm enjoying the journey.
               </motion.p>
               <motion.p
                 custom={2}
@@ -101,34 +107,20 @@ export function About() {
                 variants={textVariants}
                 className="text-sm md:text-base"
               >
-                Currently, I'm expanding my expertise into AI and Computer Vision research, 
-                exploring how machine learning can solve real-world problems. I'm particularly 
-                interested in object detection, image segmentation, and the intersection of 
-                web technologies with AI-powered applications.
-              </motion.p>
-              <motion.p
-                custom={2.5}
-                initial="hidden"
-                animate={isInView ? "visible" : "hidden"}
-                variants={textVariants}
-                className="text-sm md:text-base"
-              >
-                When I'm not coding, you'll find me contributing to open-source projects, 
-                writing technical blog posts, or experimenting with the latest frameworks 
-                and AI models.
+                When I'm not coding, I'm picking up Spanish and French, playing Scrabble, or spending time on CODM. I'm a curious person by nature, and that curiosity tends to follow me everywhere.
               </motion.p>
             </div>
           </div>
 
           <div className="space-y-8 min-w-0">
             <motion.div 
-              initial={{ opacity: 0, y: 50 }}
+              initial={{ opacity: 0, y: 80 }}
               animate={isInView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.6, delay: isLargeScreen ? 0.6 : 2.0, ease: "easeIn" }}
               className="bg-black/50 p-4 sm:p-8 rounded-2xl border border-purple-500/20 shadow-xl hover:shadow-purple-500/20 transition-all overflow-hidden"
             >
               <h4 className="text-lg md:text-xl font-bold mb-4 text-white flex items-center gap-2">
-                <FaMapMarkerAlt className="w-5 h-5 text-purple-400" />
+                <BsGlobe2 className="w-5 h-5 text-purple-400" />
                 Web Development
               </h4>
               <div className="overflow-hidden">
@@ -151,7 +143,7 @@ export function About() {
             <motion.div 
               initial={{ opacity: 0, y: 80 }}
               animate={isInView ? { opacity: 1, y: 0 } : {}}
-              transition={{ duration: 0.6, delay: isLargeScreen ? 1.2 : 2.5, ease: "easeIn" }}
+              transition={{ duration: 0.6, delay: isLargeScreen ? 1.0 : 2.4, ease: "easeIn" }}
               className="bg-black/50 p-4 sm:p-8 rounded-2xl border border-purple-500/20 shadow-xl hover:shadow-purple-500/20 transition-all overflow-hidden"
             >
               <h4 className="text-lg md:text-xl font-bold mb-4 text-white flex items-center gap-2">

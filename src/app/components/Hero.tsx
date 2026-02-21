@@ -38,7 +38,7 @@ const Hero = () => {
       duration: 0.6,
       stagger: 0.3, 
       ease: "power2.out",
-      delay: 3.3,
+      delay: 3,
     });
   }, { scope: socialIconsRef });
 
@@ -113,8 +113,8 @@ const Hero = () => {
               initial={{ opacity: 0, y: 20 }} 
               animate={{ opacity: 1, y: 0 }} 
               transition={{ 
-                opacity: { duration: 0.5, delay: 1 },
-                y: { duration: 0.5, delay: 1 } 
+                opacity: { duration: 0.5, delay: 0.8 },
+                y: { duration: 0.5, delay: 0.8 } 
               }} 
               className="text-lg md:text-2xl text-gray-300 font-semibold leading-relaxed">
               Frontend Developer & Aspiring AI/CV Research Engineer
@@ -123,8 +123,8 @@ const Hero = () => {
               initial={{ opacity: 0, y: 20 }} 
               animate={{ opacity: 1, y: 0 }} 
               transition={{ 
-                opacity: { duration: 0.5, delay: 1.5 },
-                y: { duration: 0.5, delay: 1.5 } 
+                opacity: { duration: 0.5, delay: 1.2 },
+                y: { duration: 0.5, delay: 1.2 } 
                 }} 
               className="text-sm md:text-lg text-gray-400 max-w-xl leading-relaxed">
               Building beautiful, intuitive web experiences and exploring the frontiers of 
@@ -140,8 +140,8 @@ const Hero = () => {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ 
-                  opacity: { duration: 0.5, delay: 2 },
-                  y: { duration: 0.5, delay: 2 },
+                  opacity: { duration: 0.5, delay: 1.6 },
+                  y: { duration: 0.5, delay: 1.6 },
                   scale: { duration: 0.2, type: "spring", stiffness: 400 }
                 }}
                 whileHover={{ scale: 1.05 }}
@@ -217,7 +217,7 @@ const Hero = () => {
           <motion.div
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
-            transition={{ ease: 'easeOut', duration: 1.0, delay: isLargeScreen ? 1.0 : 3.3 }}
+            transition={{ ease: 'easeOut', duration: 1.0, delay: isLargeScreen ? 1.0 : 2.5 }}
             className="flex justify-center lg:justify-end"
           >
             <div className='relative'>
@@ -256,7 +256,7 @@ const Hero = () => {
 
       {/* Scroll Indicator */}
       <motion.div
-        className="group absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 z-50 cursor-pointer p-3 hover:bg-purple-500 border border-purple-500 bg-transparent rounded-full"
+        className="group absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 z-30 cursor-pointer p-3 hover:bg-purple-500 border border-purple-500 bg-transparent rounded-full"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1, y: [0, 10, 0] }}
         transition={{ 
