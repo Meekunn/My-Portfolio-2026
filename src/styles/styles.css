@@ -1,0 +1,123 @@
+.contact-button:hover::before {
+  transform: scaleX(1);
+}
+
+.contact-button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transform: scaleX(0);
+  transform-origin: 0 50%;
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+  background: linear-gradient(
+    82.3deg,
+    var(--color-purple-400) 10.8%,
+    var(--color-purple-600) 94.3%
+  );
+  transition: all 0.475s;
+  z-index: 0;
+}
+
+.view-projects-btn {
+  --border_radius: 9999px;
+  --transtion: 0.25s ease-in-out;
+
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  transform-origin: center;
+  border: none;
+  border-radius: var(--border_radius);
+  transform: scale(calc(1 + (var(--active, 0) * 0.1)));
+  transition: transform var(--transtion);
+}
+
+.view-projects-btn::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transform-origin: 0 50%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    82.3deg,
+    var(--color-purple-500) 10.8%,
+    var(--color-purple-600) 94.3%
+  );
+  border-radius: inherit;
+  transition: all var(--transtion);
+  z-index: 0;
+}
+
+.view-projects-btn::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  background-image: radial-gradient(
+      at 51% 89%,
+      hsla(266, 45%, 74%, 1) 0px,
+      transparent 50%
+    ),
+    radial-gradient(at 100% 100%, hsla(266, 36%, 60%, 1) 0px, transparent 50%),
+    radial-gradient(at 22% 91%, hsla(266, 36%, 60%, 1) 0px, transparent 50%);
+  background-position: top;
+  opacity: var(--active, 0);
+  border-radius: var(--border_radius);
+  transition: opacity var(--transtion);
+  z-index: 2;
+}
+
+.view-projects-btn:is(:hover, :focus-visible) {
+  --active: 1;
+}
+
+.view-projects-btn:hover {
+  transform: scale(1.05);
+}
+
+.view-projects-btn .dots-border {
+  --size_border: calc(100% + 3px);
+  overflow: hidden;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: var(--size_border);
+  height: var(--size_border);
+  background-color: transparent;
+  border-radius: var(--border_radius);
+  z-index: -10;
+}
+
+.view-projects-btn .dots-border::before {
+  content: "";
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transform-origin: left;
+  transform: rotate(0deg);
+  width: 100%;
+  height: 2rem;
+  background-color: white;
+  mask: linear-gradient(transparent 0%, white 120%);
+  animation: rotate 2s linear infinite;
+}
+
+@keyframes rotate {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
