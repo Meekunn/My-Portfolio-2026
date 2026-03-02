@@ -13,10 +13,21 @@ import Pathmnist2 from "@/assets/projects/attention-map.png";
 import Pca from "@/assets/projects/pca.png";
 import FreshCheck from "@/assets/projects/fresh-check.png";
 import Portfolio2 from "@/assets/projects/portfolio-2.png";
+import TipEase from "@/assets/projects/tipease.png";
 
 export const webProjects = [
   {
     id: 0.5,
+    title: "TipEase",
+    description:
+      "TipEase is an in-progress cryptocurrency tipping web app that lets users send and receive tips via crypto wallets. The frontend features a send tip flow with multi-currency selection, wallet address management with clipboard support, and form validation powered by React Hook Form. For now, State is managed through a custom React Context with localStorage persistence, keeping wallet details intact across sessions.Currently being refined for full responsiveness, with backend integration planned as a next step. The project reflects an eye for detail and a commitment to pixel-perfect UI implementation",
+    image: TipEase,
+    tags: ["React", "Next.js", "TypeScript", "Chakra-UI", "SCSS"],
+    github: "https://github.com/Meekunn/TipEase/",
+    demo: "https://tip-ease.vercel.app/",
+  },
+  {
+    id: 0.75,
     title: "Mikun Portfolio 2",
     description:
       "A personal portfolio website designed and built from scratch to showcase projects and skills. Features a clean, responsive layout with smooth navigation and a presentation of projects.",
@@ -26,7 +37,7 @@ export const webProjects = [
     demo: "https://meekunn.github.io/",
   },
   {
-    id: 0.75,
+    id: 1,
     title: "InnovaAI Landing Page",
     description:
       "Pixel-perfect React Landing page that recreates the InnovaAI Figma mock-up, showcasing  attention to layout details and smooth micro-animations powered by the AOS library, all built with Chakra UI on Vite.",
@@ -36,7 +47,7 @@ export const webProjects = [
     demo: "https://ai-solutions-landing-page.vercel.app/",
   },
   {
-    id: 1,
+    id: 1.25,
     title: "Wedding Website",
     description:
       "An elegant wedding site crafted with seamlessly blending style and functionality. Through coding, I created a delightful and user-friendly experience for couples and their guests. Designed for Mobile Screens",
@@ -46,7 +57,7 @@ export const webProjects = [
     demo: "https://weddingsite-teal.vercel.app/",
   },
   {
-    id: 1.25,
+    id: 1.5,
     title: "Towering Heights School",
     description:
       "Collaborated with UI/UX designers to create a modern and user-friendly website for a school (Towering Heights School). Key features included a streamlined navigation system, photo gallery, and an intuitive staff carousel. By utilizing the latest web development technologies and design best practices, we were able to create a responsive and accessible platform that catered to the needs of students, parents, and staff.",
@@ -56,7 +67,7 @@ export const webProjects = [
     demo: "https://ths-project.vercel.app/",
   },
   {
-    id: 1.5,
+    id: 1.75,
     title: "Tsk App",
     description:
       "This full stack todo-app features a clean and intuitive user interface that allows users to easily manage their tasks. The app has all the basic functions such as adding, editing, deleting, and checking tasks in each collection. Additionally, users can sign in with either their email or Google account. With a focus on user experience, the design was inspired by Dribble and developed to bring a seamless experience to users.",
@@ -66,7 +77,7 @@ export const webProjects = [
     demo: "https://ehc-todoapp.web.app/",
   },
   {
-    id: 1.75,
+    id: 2.0,
     title: "Mikun Portfolio 1",
     description:
       "Developed a portfolio website showcasing my skills and experience. The design is clean and modern, with a focus on highlighting my work and achievements. The website features smooth animations and a user-friendly interface, making navigation and learning about my qualifications easy.",
@@ -83,7 +94,7 @@ export const webProjects = [
     demo: "https://adedamolaorofin.web.app/",
   },
   {
-    id: 2.0,
+    id: 2.25,
     title: "FindiT",
     description:
       "Developed a web application that simplifies the process of finding staff members and their availability for student consultations at a university. The app provides an intuitive interface for students to easily search and locate staff members. The project has been a valuable experience, combining my technical skills with the opportunity to create something that can benefit many students.",
