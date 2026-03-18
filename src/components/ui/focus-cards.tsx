@@ -162,7 +162,7 @@ export function FocusCards({ cards, isInView }: { cards: Card[], isInView: boole
                         <h3 className="font-bold text-neutral-700 dark:text-neutral-200 text-lg md:text-xl">
                           {selectedCard.title}
                         </h3>
-                        <p className="text-neutral-600 dark:text-neutral-400 text-sm md:text-base mt-1">
+                        <p className="text-neutral-600 dark:text-neutral-400 text-sm md:text-base mt-1 h-[130px] overflow-y-scroll">
                           {selectedCard.description}
                         </p>
                       </div>
