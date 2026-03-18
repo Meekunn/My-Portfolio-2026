@@ -19,10 +19,9 @@ export const webProjects = [
   {
     id: 0.5,
     title: "TipEase",
-    description:
-      "TipEase is an in-progress cryptocurrency tipping web app that lets users send and receive tips via crypto wallets. The frontend features a send tip flow with multi-currency selection, wallet address management with clipboard support, and form validation powered by React Hook Form. For now, State is managed through a custom React Context with localStorage persistence, keeping wallet details intact across sessions.Currently being refined for full responsiveness, with backend integration planned as a next step. The project reflects an eye for detail and a commitment to pixel-perfect UI implementation",
+    description: "TipEase is a full-stack cryptocurrency tipping web app that lets users connect their MetaMask wallet and send tips to any Ethereum address. The frontend is built with React, TypeScript, Vite, and Chakra UI, featuring a complete SIWE (Sign-In with Ethereum) authentication flow, real-time wallet balance display using wagmi's contract reads, multi-currency selection (ETH and ERC-20 tokens), and live USD price conversion via CoinGecko. State is managed through React Context with TanStack Query handling all server state and cache invalidation. Component behavior is covered with Vitest and React Testing Library, with tests written for form validation, UI interactions, and utility functions. The backend is a Node.js/Express REST API with PostgreSQL via Prisma, secured with JWT authentication, Zod request validation, and rate limiting. User avatars are uploaded to Cloudinary, and tip records are persisted after on-chain transactions are submitted. Currently finishing real-time token balance integration and responsiveness refinements, with withdrawal functionality planned as a next step.",
     image: TipEase,
-    tags: ["React", "Next.js", "TypeScript", "Chakra-UI", "SCSS"],
+    tags: ["React", "TypeScript", "Vite", "Chakra-UI", "wagmi", "viem", "SIWE", "Storybook", "Vitest", "Node.js/Express", "PostgreSQL", "Prisma", "Supabase"],
     github: "https://github.com/Meekunn/TipEase/",
     demo: "https://tip-ease.vercel.app/",
   },
