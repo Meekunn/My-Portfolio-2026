@@ -7,7 +7,7 @@ import { InfiniteMovingCards } from '@/components/ui/infinite-moving-cards';
 import { useIsLargeScreen } from '@/hooks/use-is-large-screen';
 
 const skills = {
-  frontend: [ 'JavaScript', 'TypeScript', 'React', 'Vue.js', 'Next.js', 'Tailwind CSS',],
+  frontend: [ 'JavaScript', 'TypeScript', 'React', 'Vue.js', 'Next.js', 'Tailwind CSS', "Storybook", "Vitest"],
   backend: [ 'Python', 'Django', 'Flask', 'MySQL' ],
   ai: [ 'Python', 'PyTorch', 'TensorFlow', 'Deep Learning', 'ANNs', 'NumPy', 'Pandas', 'Scikit-learn' ],
   cv: ['OpenCV', 'CNNs', 'DeepFace', 'Object Detection' ]
