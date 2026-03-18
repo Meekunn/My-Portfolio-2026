@@ -98,7 +98,7 @@ export function About() {
                 variants={textVariants}
                 className="text-sm md:text-base"
               >
-                These days, I'm deepening my path into AI and Computer Vision — particularly transfer learning, model generalization, biometric recognition systems, and getting deep learning models out into the real world. I'm also drawn to XR/AR/VR/MR and the possibilities that open up when immersive tech meets intelligent systems. It's a gradual process, and I'm enjoying the journey.
+                These days, I'm deepening my path into AI and Computer Vision — particularly transfer learning, model generalization, biometric recognition systems, and getting deep learning models out into the real world. I'm also drawn to medical imaging and the possibilities that open up when Immersive/Extended Reality (XR) meets intelligent systems. It's a gradual process, and I'm enjoying the journey.
               </motion.p>
               <motion.p
                 custom={2}
@@ -107,7 +107,7 @@ export function About() {
                 variants={textVariants}
                 className="text-sm md:text-base"
               >
-                When I'm not coding, I'm picking up Spanish and French, playing Scrabble, or spending time on CODM. I'm a curious person by nature, and that curiosity tends to follow me everywhere.
+                When I'm not coding, I'm picking up Spanish and French, playing Scrabble, iMessage games, or spending time on CODM. I'm a curious person by nature, and that curiosity tends to follow me everywhere.
               </motion.p>
             </div>
           </div>
